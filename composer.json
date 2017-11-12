@@ -1,7 +1,7 @@
 {
   "require" : {
     "silex/silex": "^2.0.4",
-    "monolog/monolog": "^1.22",
+    "monolog/monolog": "^1.22"
     
   },
   "require-dev": {
