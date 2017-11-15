@@ -11,20 +11,14 @@
 		 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
 
 
-		<style>
-		.carousel-inner > .item > img,
-		.carousel-inner > .item > a > img {
-			width: 70%;
-			margin: auto;
-		}
-		</style>
 		
 		
-		<link rel="stylesheet" type="text/css" href="kikaskitchen_homepage.css?v=1" />
+		
+		<link rel="stylesheet" type="text/css" href="kikaskitchen_homepage.css?v=1" /> 
+		
 		</head>
 		
 		
@@ -53,47 +47,29 @@
 		<h1 align='center' >Kika's Kitchen</h1>
 		</br></br></br>
 		
-		<div class="container">
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="soccer.jpg" alt="soccer" width="92px" height="69">
-      </div>
-
-      <div class="item">
-        <img src="soccer1.jpg" alt="soccer1" width="92px" height="50">
-      </div>
-    
-      <div class="item">
-        <img src="soccer2.jpg" alt="soccer2" width="75%" height="75%">
-      </div>
-
-      <div class="item">
-        <img src="soccer4.jpg" alt="soccer3" width="92" height="69">
-      </div>
+		
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" align="center">
+      <img class="d-block"  src="web/images/cake.jpg"  width="auto" height="300" alt="First slide">
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+    <div class="carousel-item" align="center">
+      <img class="d-block" src="web/images/jamcookies.jpg" width="auto" height="300" >
+    </div>
+    <div class="carousel-item" align="center">
+      <img class="d-block" src="..." width="auto" height="300" alt="Third slide">
+    </div>
   </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
 </div>
+
 
 		</br></br></br>
 			
@@ -142,13 +118,13 @@
 				echo "<td> &nbsp; $recipeName </td>";
 				
 				$ingredients = $row['ingredients'];
-				echo "<td> &nbsp; Ages: $ingredients </td>";
+				echo "<td> &nbsp; Ingredients: $ingredients </td>";
 				
 				$instructions = $row['instructions'];
-				echo "<td> &nbsp; Ages: $instructions </td>";
+				echo "<td> &nbsp; Instructions: $instructions </td>";
 				
 				$prepTime = $row['prepTime'];
-				echo "<td> &nbsp; Ages: $prepTime </td>";
+				echo "<td> &nbsp; Prep time: $prepTime </td>";
 				
 				
 			}
@@ -212,7 +188,10 @@
 				</br>
 				
 			
-		</body>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
 	</html>
 			
 			
